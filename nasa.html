@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preparações: NASA — Space Young Leaders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ═══════════════ HEADER ═══════════════ -->
+    <header class="header">
+        <div class="header-glow"></div>
+        <h1>🚀 Preparações: NASA</h1>
+        <p class="subtitle">Guia Completo para o <strong>Space Young Leaders</strong> — Space Center Houston</p>
+    </header>
+
+    <!-- ═══════════════ SEARCH ═══════════════ -->
+    <div class="search-wrapper">
+        <div class="search-container">
+            <input
+                type="text"
+                id="searchInput"
+                class="search-input"
+                placeholder="Pesquisar temas, termos em inglês, dicas..."
+                autocomplete="off"
+            >
+            <span class="search-icon">🔍</span>
+        </div>
+        <div id="searchResults" class="search-results hidden"></div>
+    </div>
+
+    <!-- ═══════════════ MAIN CONTENT ═══════════════ -->
+    <main class="main-content">
+
+        <!-- ═══ TEMA 1: FOGUETE ═══ -->
+        <section id="tema-foguete" class="theme-section">
+            <h2>
+                <span class="theme-number">01</span>
+                Construção de Foguete
+            </h2>
+
+            <div class="section-grid">
+                <!-- Contexto -->
+                <div class="card">
+                    <h3>📋 Contexto do Desafio</h3>
+                    <p>
+                        Você construirá um foguete <strong>presencialmente</strong> durante o programa. A equipe recebe um
+                        <span class="highlight">orçamento limitado</span> (dinheiro fictício) para comprar materiais.
+                        Não está definido se o foguete será de <strong>1 ou 2 estágios</strong> — isso será comunicado
+                        no dia. Vence a equipe que construir o foguete mais <strong>alto</strong> e que retornar
+                        mais <strong>próximo do ponto de origem</strong> (precisão de pouso).
+                    </p>
+                </div>
+
+                <!-- Fundamentos -->
+                <div class="card">
+                    <h3>🧪 Fundamentos da Propulsão</h3>
+                    <ul>
+                        <li>
+                            <strong>3ª Lei de Newton (Ação e Reação)</strong>: o foguete sobe porque os gases da
+                            combustão são expelidos para baixo com força, gerando uma força igual e oposta para cima.
+                        </li>
+                        <li>
+                            <strong>Impulso (<em>Thrust</em>)</strong>: a força que empurra o foguete. Depende da
+                            quantidade de propelente queimado por segundo e da velocidade de exaustão dos gases.
+                        </li>
+                        <li>
+                            <strong>Centro de Pressão (CP) vs Centro de Gravidade (CG)</strong>:
+                            <ul>
+                                <li><strong>CG</strong> deve ficar <em>acima</em> do <strong>CP</strong> para
+                                estabilidade em voo</li>
+                                <li>Se o CP estiver acima do CG, o foguete tomba e voa descontrolado</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong>Arrasto (<em>Drag</em>)</strong>: resistência do ar. Um foguete aerodinâmico
+                            sofre menos arrasto e sobe mais alto.
+                        </li>
+                        <li>
+                            <strong>Estabilidade passiva</strong>: obtida com <strong>aletas</strong> na base
+                            do foguete, que deslocam o CP para baixo.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Materiais -->
+                <div class="card">
+                    <h3>🛒 Sistema de Orçamento &amp; Materiais</h3>
+                    <p>Você terá uma quantia fixa de dinheiro fictício. Cada material tem um custo. Planeje antes de comprar!</p>
+                    <table class="materials-table">
+                        <thead>
+                            <tr>
+                                <th>Material</th>
+                                <th>Função</th>
+                                <th>Dica</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Garrafa PET (1,5L ou 2L)</td>
+                                <td>Fuselagem / corpo do foguete</td>
+                                <td>Quanto mais lisa, menos arrasto. Prefira as cilíndricas sem ondulações</td>
+                            </tr>
+                            <tr>
+                                <td>Papelão / Pluma (Foam board)</td>
+                                <td>Aletas</td>
+                                <td>Papelão revestido com fita resiste melhor à água e ao impacto</td>
+                            </tr>
+                            <tr>
+                                <td>Fita adesiva (silver tape / duct tape)</td>
+                                <td>Fixação e vedação</td>
+                                <td>A fita prateada (silver tape) é mais resistente à água e calor</td>
+                            </tr>
+                            <tr>
+                                <td>Argila / Massa de modelar</td>
+                                <td>Peso no nariz (cone)</td>
+                                <td>Adiciona massa no topo para deslocar o CG para cima. Essencial para estabilidade!</td>
+                            </tr>
+                            <tr>
+                                <td>Paraquedas (plástico/sacola + fio)</td>
+                                <td>Sistema de recuperação</td>
+                                <td>Um paraquedas bem dobrado e que abre no apogeu garante retorno preciso</td>
+                            </tr>
+                            <tr>
+                                <td>Barbante / Fio de nylon</td>
+                                <td>Conexão do paraquedas</td>
+                                <td>Precisa ser leve mas resistente. Nylon é ideal</td>
+                            </tr>
+                            <tr>
+                                <td>Cone de nariz (papel cartão)</td>
+                                <td>Reduzir arrasto aerodinâmico</td>
+                                <td>Formato ogival (curvo) é mais aerodinâmico que cônico reto</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- 2 Estágios -->
+                <div class="card">
+                    <h3>⚡ Foguete de 2 Estágios</h3>
+                    <p>Se o desafio permitir 2 estágios, há uma complexidade extra:</p>
+                    <ol>
+                        <li>
+                            <strong>Estágio 1 (inferior)</strong>: empurra o foguete na decolagem.
+                            Ao esgotar o combustível, se desacopla e cai.
+                        </li>
+                        <li>
+                            <strong>Estágio 2 (superior)</strong>: acende após a separação.
+                            Continua subindo até maior altitude.
+                        </li>
+                        <li>
+                            <strong>Mecanismo de separação</strong>: pode ser por pressão (o ar do 1º estágio
+                            empurra o 2º) ou por temporizador mecânico simples.
+                        </li>
+                    </ol>
+                    <p>
+                        <strong>Vantagem</strong>: o foguete não carrega peso morto (estágio vazio).
+                        <strong>Desvantagem</strong>: mais complexo, mais pontos de falha, mais caro no orçamento.
+                    </p>
+                </div>
+
+                <!-- Dicas -->
+                <div class="card">
+                    <h3>🏆 Dicas para Vencer</h3>
+                    <ul>
+                        <li><strong>Teste o CG</strong>: o foguete deve se equilibrar no seu dedo a cerca de
+                        1/3 da distância do nariz até a base. Se equilibrar muito abaixo, adicione argila no nariz.</li>
+                        <li><strong>Aletas simétricas</strong>: use 3 ou 4 aletas idênticas e perfeitamente alinhadas.
+                        Aletas tortas fazem o foguete girar e perder altitude.</li>
+                        <li><strong>Paraquedas eficiente</strong>: quanto maior o paraquedas, mais lenta a descida
+                        e mais preciso o pouso. Mas cuidado com o peso extra.</li>
+                        <li><strong>Vede bem</strong>: qualquer vazamento de ar/pressão reduz o impulso total.
+                        Use fita generosamente nas junções.</li>
+                        <li><strong>Orçamento inteligente</strong>: não gaste tudo no material mais caro.
+                        Um foguete simples bem construído supera um complexo malfeito.</li>
+                    </ul>
+                </div>
+
+                <!-- Inglês -->
+                <div class="card english-card">
+                    <h3>🇺🇸 Termos em Inglês &amp; Pronúncia</h3>
+                    <table class="english-table">
+                        <thead>
+                            <tr><th>Português</th><th>English</th><th>Pronúncia Aproximada</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Foguete</td><td>Rocket</td><td>ró-ket</td></tr>
+                            <tr><td>Estágio</td><td>Stage</td><td>stêidj</td></tr>
+                            <tr><td>Propulsão</td><td>Propulsion</td><td>pro-pãl-xãn</td></tr>
+                            <tr><td>Impulso</td><td>Thrust</td><td>trãst</td></tr>
+                            <tr><td>Arrasto</td><td>Drag</td><td>drég</td></tr>
+                            <tr><td>Aleta</td><td>Fin</td><td>fín</td></tr>
+                            <tr><td>Paraquedas</td><td>Parachute</td><td>pé-ra-xut</td></tr>
+                            <tr><td>Nariz / Cone</td><td>Nose cone</td><td>nôuz côun</td></tr>
+                            <tr><td>Apogeu</td><td>Apogee</td><td>á-po-dji</td></tr>
+                            <tr><td>Centro de gravidade</td><td>Center of gravity (CG)</td><td>sen-târ óv gré-vi-ti</td></tr>
+                            <tr><td>Centro de pressão</td><td>Center of pressure (CP)</td><td>sen-târ óv pré-xâr</td></tr>
+                            <tr><td>Orçamento</td><td>Budget</td><td>bã-djet</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ TEMA 2: HABITAT LUNAR ═══ -->
+        <section id="tema-habitat" class="theme-section">
+            <h2>
+                <span class="theme-number">02</span>
+                Construção de um Habitat Lunar
+            </h2>
+
+            <div class="section-grid">
+                <!-- Contexto -->
+                <div class="card">
+                    <h3>📋 Contexto do Desafio</h3>
+                    <p>
+                        Você criará um <strong>esboço no papel</strong> com a ideia original do habitat e,
+                        em seguida, construirá uma <strong>maquete física</strong> usando materiais
+                        disponíveis, adquiridos com o mesmo <span class="highlight">sistema de orçamento</span>.
+                        O habitat deve ser funcional, protegendo astronautas do ambiente lunar hostil.
+                    </p>
+                </div>
+
+                <!-- Ambiente lunar -->
+                <div class="card">
+                    <h3>🌑 O Ambiente Lunar — Por que Precisamos de um Habitat?</h3>
+                    <table class="info-table">
+                        <thead>
+                            <tr><th>Ameaça</th><th>Detalhe</th><th>Solução no Habitat</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Radiação cósmica e solar</strong></td>
+                                <td>Sem campo magnético e atmosfera, a Lua recebe radiação letal</td>
+                                <td>Paredes espessas; enterrar o habitat com regolito lunar</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Micrometeoritos</strong></td>
+                                <td>Partículas minúsculas a velocidades absurdas (até 72 km/s)</td>
+                                <td>Camada externa de sacrifício (Whipple shield — dupla parede)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Temperaturas extremas</strong></td>
+                                <td>+127°C de dia a -173°C de noite (variação de 300°C!)</td>
+                                <td>Isolamento multicamada (MLI) e controle térmico ativo</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Vácuo</strong></td>
+                                <td>Sem ar, sem pressão atmosférica</td>
+                                <td>Estrutura pressurizada e selada hermeticamente</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Poeira lunar (regolito)</strong></td>
+                                <td>Abrasiva, eletrostática, gruda em tudo, danifica equipamentos</td>
+                                <td>Sistema de descontaminação na entrada (airlock com escovação)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- O que deve ter -->
+                <div class="card">
+                    <h3>🏠 O que Deve Ter no Habitat</h3>
+                    <ol>
+                        <li>
+                            <strong>Área de dormitório (<em>Sleeping quarters</em>)</strong>: camas compactas,
+                            preferencialmente verticais (na microgravidade parcial da Lua, 1/6 G, o corpo
+                            não sente "deitado" como na Terra). Isolamento acústico para ruído de equipamentos.
+                        </li>
+                        <li>
+                            <strong>Cozinha / Refeitório (<em>Galley</em>)</strong>: sistema de hidratação
+                            de alimentos, forno de convecção, mesa com ímãs ou velcro para utensílios.
+                        </li>
+                        <li>
+                            <strong>Laboratório científico (<em>Science lab</em>)</strong>: bancadas, microscópios,
+                            armazenamento de amostras lunares, luvas de contenção para manipulação segura.
+                        </li>
+                        <li>
+                            <strong>Estação de exercícios (<em>Exercise station</em>)</strong>: essencial para
+                            combater atrofia muscular e perda óssea em baixa gravidade. Esteira, bicicleta
+                            ergométrica, dispositivo de resistência.
+                        </li>
+                        <li>
+                            <strong>Sistema de suporte à vida (<em>ECLSS — Environmental Control and Life Support System</em>)</strong>:
+                            reciclagem de água (incluindo urina), geração de oxigênio (eletrólise da água ou
+                            extração do regolito), remoção de CO₂ (filtros de hidróxido de lítio).
+                        </li>
+                        <li>
+                            <strong>Airlock (Eclusa de ar)</strong>: entrada/saída com duas portas seladas
+                            para não perder a pressurização interna. Sistema de limpeza de poeira lunar.
+                        </li>
+                        <li>
+                            <strong>Estufa (<em>Greenhouse</em>)</strong>: cultivo hidropônico de vegetais
+                            (alface, tomate, rabanete) para alimento fresco e suporte psicológico.
+                        </li>
+                        <li>
+                            <strong>Painéis solares (<em>Solar panels</em>)</strong>: fonte primária de energia,
+                            com baterias para os 14 dias de noite lunar.
+                        </li>
+                        <li>
+                            <strong>Sistema de comunicação</strong>: antenas de alto ganho para comunicação
+                            com a Terra (delay de ~1,3 segundos cada via).
+                        </li>
+                    </ol>
+                </div>
+
+                <!-- Materiais -->
+                <div class="card">
+                    <h3>🛒 Materiais para a Maquete</h3>
+                    <table class="materials-table">
+                        <thead>
+                            <tr><th>Material</th><th>O que representa</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Papelão / Foam board</td><td>Paredes estruturais do habitat</td></tr>
+                            <tr><td>Papel alumínio</td><td>Isolamento térmico MLI (Multi-Layer Insulation)</td></tr>
+                            <tr><td>Canudos / Palitos</td><td>Tubulações, estruturas de suporte</td></tr>
+                            <tr><td>Plástico bolha</td><td>Camada protetora contra micrometeoritos</td></tr>
+                            <tr><td>Fita adesiva colorida</td><td>Demarcação de áreas funcionais</td></tr>
+                            <tr><td>Bolinhas de isopor</td><td>Tanques de armazenamento, módulos esféricos</td></tr>
+                            <tr><td>Tampinhas de garrafa</td><td>Painéis de controle, antenas</td></tr>
+                            <tr><td>Areia / terra fina</td><td>Regolito lunar (cobertura protetora)</td></tr>
+                            <tr><td>LEDs (se disponível)</td><td>Iluminação interna do habitat</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Inglês -->
+                <div class="card english-card">
+                    <h3>🇺🇸 Termos em Inglês &amp; Pronúncia</h3>
+                    <table class="english-table">
+                        <thead>
+                            <tr><th>Português</th><th>English</th><th>Pronúncia Aproximada</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Habitat</td><td>Habitat</td><td>rré-bi-tét</td></tr>
+                            <tr><td>Regolito</td><td>Regolith</td><td>rré-go-lif</td></tr>
+                            <tr><td>Eclusa de ar</td><td>Airlock</td><td>ér-lók</td></tr>
+                            <tr><td>Suporte à vida</td><td>Life support</td><td>láif su-pórt</td></tr>
+                            <tr><td>Micrometeorito</td><td>Micrometeoroid</td><td>mái-crou-mí-ti-o-róid</td></tr>
+                            <tr><td>Radiação</td><td>Radiation</td><td>rrei-di-êi-xãn</td></tr>
+                            <tr><td>Pressurizado</td><td>Pressurized</td><td>pré-xa-raizd</td></tr>
+                            <tr><td>Estufa</td><td>Greenhouse</td><td>grín-rráus</td></tr>
+                            <tr><td>Painel solar</td><td>Solar panel</td><td>sôu-lar pé-nol</td></tr>
+                            <tr><td>Hidroponia</td><td>Hydroponics</td><td>rái-dro-pô-niks</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ TEMA 3: ROBÔ ═══ -->
+        <section id="tema-robo" class="theme-section">
+            <h2>
+                <span class="theme-number">03</span>
+                Construção e Programação de um Robô
+            </h2>
+
+            <div class="section-grid">
+                <!-- Contexto -->
+                <div class="card">
+                    <h3>📋 Contexto do Desafio</h3>
+                    <p>
+                        Você montará um robô usando <strong>peças fornecidas pela organização</strong>.
+                        O kit provavelmente será <span class="highlight">LEGO SPIKE Prime</span>
+                        (sucessor do EV3). A programação é feita por <strong>blocos visuais</strong>
+                        (arrastar e soltar, estilo Scratch). O robô deve cumprir tarefas como
+                        andar, pegar objetos com um braço robótico, desviar de obstáculos e
+                        seguir trajetórias.
+                    </p>
+                </div>
+
+                <!-- Fundamentos -->
+                <div class="card">
+                    <h3>🧠 Lógica de Programação (Blocos)</h3>
+                    <p>
+                        Embora a interface seja visual (arrastar e soltar blocos), a
+                        <strong>lógica é a mesma de linguagens profissionais</strong> como Python ou C++.
+                        Todo programa é uma sequência de instruções que o robô executa em ordem.
+                    </p>
+                    <ul>
+                        <li>
+                            <strong>Sequência</strong>: blocos executados um após o outro, de cima para baixo.
+                        </li>
+                        <li>
+                            <strong>Condicionais (<em>if/else</em>)</strong>: o robô toma decisões.
+                            Exemplo: <em>SE</em> o sensor de distância detectar algo a menos de 10 cm,
+                            <em>ENTÃO</em> parar e girar, <em>SENÃO</em> continuar em frente.
+                        </li>
+                        <li>
+                            <strong>Loops (<em>repeat/while</em>)</strong>: repetir um bloco várias vezes.
+                            Exemplo: repetir 4 vezes {andar 50 cm + girar 90°} = percorrer um quadrado.
+                        </li>
+                        <li>
+                            <strong>Variáveis</strong>: guardar valores que mudam.
+                            Exemplo: contar quantos obstáculos o robô encontrou.
+                        </li>
+                        <li>
+                            <strong>Funções / Meus Blocos</strong>: agrupar comandos reutilizáveis.
+                            Exemplo: criar um bloco "pegarObjeto" que executa uma sequência de movimentos do braço.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Tarefas típicas -->
+                <div class="card">
+                    <h3>🤖 Tarefas Típicas do Robô</h3>
+                    <table class="materials-table">
+                        <thead>
+                            <tr><th>Tarefa</th><th>O que o robô precisa fazer</th><th>Sensores e motores envolvidos</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Andar em linha reta</strong></td>
+                                <td>Motores giram na mesma velocidade e direção</td>
+                                <td>2 motores grandes (movimento diferencial)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Fazer curva precisa</strong></td>
+                                <td>Um motor para, o outro gira; ou giram em direções opostas</td>
+                                <td>2 motores + giroscópio (para ângulo exato)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Desviar de obstáculo</strong></td>
+                                <td>Detectar objeto → parar → girar → contornar → retomar rota</td>
+                                <td>Sensor ultrassônico (distância) + motores</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Seguir linha</strong></td>
+                                <td>Sensor de cor lê a linha no chão e ajusta a direção continuamente</td>
+                                <td>Sensor de cor (modo refletância) + motores</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Pegar objeto com braço</strong></td>
+                                <td>Motor do braço desce, garra fecha, braço sobe, robô transporta</td>
+                                <td>Motor médio (braço/garra) + sensor de toque (confirmar pegada)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Estacionar em área marcada</strong></td>
+                                <td>Sensor de cor detecta a cor da área-alvo e para</td>
+                                <td>Sensor de cor + motores</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Dicas -->
+                <div class="card">
+                    <h3>🏆 Dicas para Vencer</h3>
+                    <ul>
+                        <li><strong>Calibre os sensores</strong>: antes de programar, leia os valores dos sensores
+                        no app para entender o que eles "enxergam" no ambiente real.</li>
+                        <li><strong>Use o giroscópio</strong>: curvas baseadas só em tempo ou rotações dos
+                        motores acumulam erro. O giroscópio garante ângulos exatos (ex: "gire até 90°").</li>
+                        <li><strong>Divida o problema</strong>: não tente programar tudo de uma vez. Resolva
+                        uma tarefa por vez e depois junte.</li>
+                        <li><strong>Comente o código</strong>: o app SPIKE permite adicionar comentários
+                        nos blocos. Use para explicar à equipe (e aos juízes) o que cada parte faz.</li>
+                        <li><strong>Itere rápido</strong>: teste → observe o erro → ajuste → teste de novo.
+                        Equipes que iteram rápido aprendem mais e entregam melhor.</li>
+                    </ul>
+                </div>
+
+                <!-- Inglês -->
+                <div class="card english-card">
+                    <h3>🇺🇸 Termos em Inglês &amp; Pronúncia</h3>
+                    <table class="english-table">
+                        <thead>
+                            <tr><th>Português</th><th>English</th><th>Pronúncia Aproximada</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Robô</td><td>Robot</td><td>rôu-bot</td></tr>
+                            <tr><td>Sensor de distância</td><td>Distance sensor / Ultrasonic sensor</td><td>dís-tans sén-sor / ãl-tra-sô-nik</td></tr>
+                            <tr><td>Sensor de cor</td><td>Color sensor</td><td>cã-lor sén-sor</td></tr>
+                            <tr><td>Giroscópio</td><td>Gyroscope / Gyro sensor</td><td>djái-ro-scoup</td></tr>
+                            <tr><td>Motor</td><td>Motor</td><td>môu-tor</td></tr>
+                            <tr><td>Garra / Braço</td><td>Gripper / Arm</td><td>grí-per / árm</td></tr>
+                            <tr><td>Condicional (SE/ENTÃO)</td><td>Conditional (IF/THEN)</td><td>con-dí-xo-nal (if/dén)</td></tr>
+                            <tr><td>Loop</td><td>Loop / Repeat</td><td>lúp / ri-pít</td></tr>
+                            <tr><td>Variável</td><td>Variable</td><td>vé-ri-a-bol</td></tr>
+                            <tr><td>Calibrar</td><td>Calibrate</td><td>cá-li-breit</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ TEMA 4: ESCUDO TÉRMICO ═══ -->
+        <section id="tema-escudo" class="theme-section">
+            <h2>
+                <span class="theme-number">04</span>
+                Escudo / Blindagem Térmica
+            </h2>
+
+            <div class="section-grid">
+                <!-- Contexto -->
+                <div class="card">
+                    <h3>📋 Contexto do Desafio</h3>
+                    <p>
+                        Você deve <strong>proteger um ovo</strong> de uma fonte de calor extremo
+                        (provavelmente um maçarico) usando uma <strong>blindagem retangular de
+                        4 camadas de materiais</strong>. O objetivo é que o ovo permaneça
+                        <strong>cru</strong> após a exposição. O calor da chama pode atingir
+                        temperaturas acima de 1.200°C.
+                    </p>
+                </div>
+
+                <!-- Como funciona -->
+                <div class="card">
+                    <h3>🔥 As Três Formas de Transferência de Calor</h3>
+                    <div class="heat-transfer-grid">
+                        <div class="heat-item">
+                            <strong>Condução</strong> (<em>Conduction</em>)
+                            <p>Calor viaja através de um sólido, molécula a molécula. Ex: colher de metal esquenta o cabo.</p>
+                            <span class="solution">🛡️ Bloqueie com materiais de baixa condutividade: lã, ar, cortiça.</span>
+                        </div>
+                        <div class="heat-item">
+                            <strong>Convecção</strong> (<em>Convection</em>)
+                            <p>Calor viaja através de fluidos (ar, líquido) em movimento. Ex: ar quente sobe.</p>
+                            <span class="solution">🛡️ Elimine espaços vazios onde o ar circula. Sele as bordas.</span>
+                        </div>
+                        <div class="heat-item">
+                            <strong>Radiação</strong> (<em>Radiation</em>)
+                            <p>Calor viaja por ondas eletromagnéticas, sem precisar de matéria. Ex: calor do Sol.</p>
+                            <span class="solution">🛡️ Superfícies refletivas (alumínio) refletem a radiação de volta.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Estratégias -->
+                <div class="card">
+                    <h3>🛡️ As Três Estratégias de Proteção</h3>
+                    <ol>
+                        <li>
+                            <strong>Ablação (<em>Ablation</em>)</strong>: o material queima e se desgasta
+                            propositalmente. Ao queimar, consome energia (calor) e cria uma camada
+                            carbonizada que isola. Ex: madeira balsa, cortiça, gesso.
+                        </li>
+                        <li>
+                            <strong>Dissipação térmica (<em>Thermal dissipation</em>)</strong>: o material
+                            absorve e espalha o calor, irradiando-o de volta. Ex: tela metálica, alumínio.
+                        </li>
+                        <li>
+                            <strong>Isolamento (<em>Insulation</em>)</strong>: barreira que impede o calor
+                            de atravessar. Materiais com ar preso (lã de vidro, fibra cerâmica) são os
+                            melhores isolantes, pois o ar parado conduz muito mal o calor.
+                        </li>
+                    </ol>
+                </div>
+
+                <!-- As 4 camadas -->
+                <div class="card">
+                    <h3>📐 As 4 Camadas (da Externa para a Interna)</h3>
+                    <table class="materials-table">
+                        <thead>
+                            <tr><th>Camada</th><th>Função</th><th>Material Sugerido</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>1 — Externa</strong></td>
+                                <td>Enfrenta o calor diretamente. Deve refletir radiação ou ablacionar</td>
+                                <td>Papel alumínio, tela metálica, ou cortiça fina</td>
+                            </tr>
+                            <tr>
+                                <td><strong>2 — Média externa</strong></td>
+                                <td>Isolamento principal: bloqueia condução e convecção</td>
+                                <td>Lã de vidro, fibra cerâmica, cortiça grossa</td>
+                            </tr>
+                            <tr>
+                                <td><strong>3 — Média interna</strong></td>
+                                <td>Massa térmica: absorve o calor residual que passou</td>
+                                <td>Gesso, argila, massa de modelar</td>
+                            </tr>
+                            <tr>
+                                <td><strong>4 — Interna (junto ao ovo)</strong></td>
+                                <td>Última barreira: espaço de ar + leve isolamento</td>
+                                <td>Camada fina de algodão ou lã, com pequeno espaço de ar</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Inglês -->
+                <div class="card english-card">
+                    <h3>🇺🇸 Termos em Inglês &amp; Pronúncia</h3>
+                    <table class="english-table">
+                        <thead>
+                            <tr><th>Português</th><th>English</th><th>Pronúncia Aproximada</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Escudo térmico</td><td>Heat shield</td><td>rrít xild</td></tr>
+                            <tr><td>Ablação</td><td>Ablation</td><td>a-blêi-xãn</td></tr>
+                            <tr><td>Condução</td><td>Conduction</td><td>con-dãk-xãn</td></tr>
+                            <tr><td>Convecção</td><td>Convection</td><td>con-vék-xãn</td></tr>
+                            <tr><td>Radiação</td><td>Radiation</td><td>rrei-di-êi-xãn</td></tr>
+                            <tr><td>Isolamento</td><td>Insulation</td><td>in-su-lêi-xãn</td></tr>
+                            <tr><td>Fibra cerâmica</td><td>Ceramic wool / Fiber</td><td>se-rré-mik uúl</td></tr>
+                            <tr><td>Condutividade térmica</td><td>Thermal conductivity</td><td>tãr-mal con-dak-tí-vi-ti</td></tr>
+                            <tr><td>Reentrada</td><td>Reentry</td><td>ri-én-tri</td></tr>
+                            <tr><td>Dissipação</td><td>Dissipation</td><td>di-si-pêi-xãn</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ TEMA 5: CRIOGENIA ═══ -->
+        <section id="tema-criogenia" class="theme-section">
+            <h2>
+                <span class="theme-number">05</span>
+                Criogenia
+            </h2>
+
+            <div class="section-grid">
+                <!-- Contexto -->
+                <div class="card">
+                    <h3>📋 Contexto do Desafio</h3>
+                    <p>
+                        Você deve <strong>proteger um marshmallow</strong> de temperaturas extremamente
+                        baixas usando <strong>nitrogênio líquido</strong>. O nitrogênio líquido ferve a
+                        <span class="highlight">-196°C</span>. O marshmallow exposto diretamente congela
+                        instantaneamente e se torna quebradiço como vidro. Seu desafio é criar uma
+                        blindagem que mantenha o marshmallow macio e intacto.
+                    </p>
+                </div>
+
+                <!-- Fundamentos -->
+                <div class="card">
+                    <h3>🧊 Fundamentos da Criogenia</h3>
+                    <ul>
+                        <li>
+                            <strong>Nitrogênio líquido (LN₂)</strong>: nitrogênio resfriado ao estado líquido
+                            a -196°C. Não é inflamável, é inodoro, incolor, e compõe 78% do ar que respiramos.
+                        </li>
+                        <li>
+                            <strong>Efeito Leidenfrost</strong>: quando um objeto à temperatura ambiente
+                            toca nitrogênio líquido, forma-se uma camada de gás ao redor que isola
+                            momentaneamente. Por isso você pode mergulhar rapidamente a mão sem se queimar
+                            (NÃO tente em casa!).
+                        </li>
+                        <li>
+                            <strong>Choque térmico</strong>: mudança brusca de temperatura que causa
+                            rachaduras e fraturas. Marshmallows expostos diretamente racham e esfarelam.
+                        </li>
+                        <li>
+                            <strong>Condutividade térmica inversa</strong>: no frio extremo, alguns
+                            materiais mudam de propriedade. Metais ficam supercondutores; plásticos
+                            ficam quebradiços.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Estratégias -->
+                <div class="card">
+                    <h3>🛡️ Estratégias para o Frio Extremo</h3>
+                    <ol>
+                        <li>
+                            <strong>Isolamento é tudo</strong>: materiais com ar preso (lã, espuma,
+                            isopor) são tão eficazes contra o frio quanto contra o calor. O ar parado
+                            é um excelente isolante térmico.
+                        </li>
+                        <li>
+                            <strong>Múltiplas camadas finas &gt; uma camada grossa</strong>: cada
+                            interface entre camadas cria resistência térmica adicional (barreira de
+                            contato).
+                        </li>
+                        <li>
+                            <strong>Evite materiais metálicos em contato direto</strong>: metais
+                            conduzem frio extremamente bem (alta condutividade). Se usar metal, que
+                            seja como barreira refletiva externa, não em contato com o marshmallow.
+                        </li>
+                        <li>
+                            <strong>Massa térmica</strong>: um material que demora para esfriar
+                            (como argila ou água — em recipiente selado) pode "comprar tempo".
+                        </li>
+                    </ol>
+                </div>
+
+                <!-- Aplicações -->
+                <div class="card">
+                    <h3>🌌 Aplicações Espaciais Reais</h3>
+                    <table class="materials-table">
+                        <thead>
+                            <tr><th>Aplicação</th><th>Descrição</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Combustível de foguetes</td>
+                                <td>Hidrogênio líquido (-253°C) e oxigênio líquido (-183°C) são os propelentes mais eficientes</td>
+                            </tr>
+                            <tr>
+                                <td>Preservação de amostras</td>
+                                <td>Amostras lunares e de asteroides são mantidas em nitrogênio líquido para não degradarem</td>
+                            </tr>
+                            <tr>
+                                <td>Resfriamento de telescópios</td>
+                                <td>O telescópio James Webb opera a -233°C (40K) para detectar infravermelho sem interferência</td>
+                            </tr>
+                            <tr>
+                                <td>Criogenia humana (futuro)</td>
+                                <td>Pesquisas sobre hibernação induzida para viagens interplanetárias longas</td>
+                            </tr>
+                            <tr>
+                                <td>Supercondutividade</td>
+                                <td>Materiais a temperaturas criogênicas conduzem eletricidade sem resistência (zero perda)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Inglês -->
+                <div class="card english-card">
+                    <h3>🇺🇸 Termos em Inglês &amp; Pronúncia</h3>
+                    <table class="english-table">
+                        <thead>
+                            <tr><th>Português</th><th>English</th><th>Pronúncia Aproximada</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Criogenia</td><td>Cryogenics</td><td>crái-o-djé-niks</td></tr>
+                            <tr><td>Nitrogênio líquido</td><td>Liquid nitrogen</td><td>lí-kwid nai-tro-djen</td></tr>
+                            <tr><td>Choque térmico</td><td>Thermal shock</td><td>tãr-mal xók</td></tr>
+                            <tr><td>Efeito Leidenfrost</td><td>Leidenfrost effect</td><td>lái-den-frost i-fékt</td></tr>
+                            <tr><td>Isolamento térmico</td><td>Thermal insulation</td><td>tãr-mal in-su-lêi-xãn</td></tr>
+                            <tr><td>Congelamento</td><td>Freezing</td><td>frí-zing</td></tr>
+                            <tr><td>Crioprotetor</td><td>Cryoprotectant</td><td>crái-o-pro-ték-tant</td></tr>
+                            <tr><td>Supercondutor</td><td>Superconductor</td><td>su-per-con-dãk-tor</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══ TEMA 6: NUTRIÇÃO ═══ -->
+        <section id="tema-nutricao" class="theme-section">
+            <h2>
+                <span class="theme-number">06</span>
+                Cálculo de Nutrição de Astronautas
+            </h2>
+
+            <div class="section-grid">
+                <!-- Contexto -->
+                <div class="card">
+                    <h3>📋 Contexto do Desafio</h3>
+                    <p>
+                        Você calculará as <strong>necessidades nutricionais</strong> de astronautas
+                        em missão espacial. Envolve bioquímica, metabolismo e planejamento alimentar
+                        para condições de microgravidade. O corpo humano se comporta de forma
+                        diferente no espaço: perda óssea, atrofia muscular, redistribuição de fluidos,
+                        alteração do paladar.
+                    </p>
+                </div>
+
+                <!-- Necessidades -->
+                <div class="card">
+                    <h3>🧬 Necessidades Nutricionais no Espaço</h3>
+                    <table class="materials-table">
+                        <thead>
+                            <tr><th>Nutriente</th><th>Função no Corpo</th><th>Por que é Crítico no Espaço</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Proteínas</strong></td>
+                                <td>Construção e reparo muscular, enzimas, hormônios</td>
+                                <td>Microgravidade causa atrofia muscular acelerada. Necessidade aumentada.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Cálcio e Vitamina D</strong></td>
+                                <td>Saúde óssea, contração muscular</td>
+                                <td>Sem carga nos ossos, astronautas perdem 1-2% de massa óssea por mês. Suplementação é obrigatória.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Ferro</strong></td>
+                                <td>Transporte de oxigênio (hemoglobina)</td>
+                                <td>Redistribuição de fluidos reduz glóbulos vermelhos. Excesso de ferro pode ser tóxico.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sódio e Potássio</strong></td>
+                                <td>Equilíbrio de fluidos, impulsos nervosos</td>
+                                <td>A redistribuição de fluidos na microgravidade bagunça o balanço eletrolítico.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Vitamina K</strong></td>
+                                <td>Coagulação sanguínea, metabolismo ósseo</td>
+                                <td>Essencial para contrabalançar a perda óssea acelerada.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Ômega-3</strong></td>
+                                <td>Anti-inflamatório, saúde cerebral</td>
+                                <td>Ajuda a mitigar inflamação e proteger o sistema cardiovascular no espaço.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Calorias totais</strong></td>
+                                <td>Energia para funções vitais e atividades</td>
+                                <td>Astronautas precisam de 2.500–3.800 kcal/dia dependendo da missão e atividade.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Bioquímica -->
+                <div class="card">
+                    <h3>🔬 Bioquímica e Metabolismo no Espaço</h3>
+                    <ul>
+                        <li>
+                            <strong>Remodelação óssea</strong>: na Terra, osteoblastos (constroem osso) e
+                            osteoclastos (degradam osso) estão em equilíbrio. Na microgravidade, os
+                            osteoclastos dominam → perda óssea.
+                        </li>
+                        <li>
+                            <strong>Atrofia muscular</strong>: sem gravidade, músculos posturais (costas,
+                            pernas) não são exigidos. Proteínas musculares são degradadas e não repostas
+                            na mesma velocidade.
+                        </li>
+                        <li>
+                            <strong>Deslocamento de fluidos</strong>: na Terra, a gravidade puxa o sangue
+                            para as pernas. No espaço, o sangue se acumula no tronco e cabeça → "cara de
+                            lua" (moon face), congestão nasal, redução da sede.
+                        </li>
+                        <li>
+                            <strong>Estresse oxidativo</strong>: a radiação espacial gera radicais livres
+                            no corpo. Antioxidantes (vitaminas C, E, selênio) são cruciais.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Cálculo prático -->
+                <div class="card">
+                    <h3>🧮 Exemplo de Cálculo Nutricional</h3>
+                    <p><strong>Cenário:</strong> astronauta de 70 kg em missão de 30 dias na órbita baixa.</p>
+                    <table class="materials-table">
+                        <thead>
+                            <tr><th>Parâmetro</th><th>Cálculo</th><th>Resultado</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Calorias diárias</td><td>TMB (Taxa Metabólica Basal) × fator de atividade</td><td>~2.800 kcal/dia</td></tr>
+                            <tr><td>Proteína diária</td><td>1,2 a 1,5 g por kg de massa corporal (elevado pela atrofia)</td><td>84–105 g/dia</td></tr>
+                            <tr><td>Cálcio diário</td><td>1.000–1.200 mg/dia (padrão NASA para astronautas)</td><td>~1.200 mg/dia</td></tr>
+                            <tr><td>Vitamina D</td><td>800–1.000 UI/dia (sem exposição solar)</td><td>~1.000 UI/dia</td></tr>
+                            <tr><td>Água</td><td>2,5–3 L/dia (reciclada da urina e umidade do ar)</td><td>~3 L/dia</td></tr>
+                            <tr><td>Ferro</td><td>10 mg/dia (homens), 18 mg/dia (mulheres)</td><td>10–18 mg/dia</td></tr>
+                        </tbody>
+                    </table>
+                    <p>
+                        <strong>Fórmula da TMB (Harris-Benedict, adaptada):</strong><br>
+                        Homens: TMB = 66,5 + (13,75 × peso kg) + (5 × altura cm) – (6,75 × idade)<br>
+                        Mulheres: TMB = 655 + (9,56 × peso kg) + (1,85 × altura cm) – (4,68 × idade)
+                    </p>
+                </div>
+
+                <!-- Inglês -->
+                <div class="card english-card">
+                    <h3>🇺🇸 Termos em Inglês &amp; Pronúncia</h3>
+                    <table class="english-table">
+                        <thead>
+                            <tr><th>Português</th><th>English</th><th>Pronúncia Aproximada</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Nutrição</td><td>Nutrition</td><td>nu-trí-xãn</td></tr>
+                            <tr><td>Bioquímica</td><td>Biochemistry</td><td>bái-o-ké-mis-tri</td></tr>
+                            <tr><td>Metabolismo</td><td>Metabolism</td><td>me-tá-bo-li-zem</td></tr>
+                            <tr><td>Taxa metabólica basal</td><td>Basal metabolic rate (BMR)</td><td>bêi-zal me-ta-bó-lik rêit</td></tr>
+                            <tr><td>Proteína</td><td>Protein</td><td>prôu-tin</td></tr>
+                            <tr><td>Cálcio</td><td>Calcium</td><td>cál-ci-am</td></tr>
+                            <tr><td>Atrofia muscular</td><td>Muscle atrophy</td><td>mã-sol á-tro-fi</td></tr>
+                            <tr><td>Perda óssea</td><td>Bone loss</td><td>bôun lós</td></tr>
+                            <tr><td>Osteoblastos</td><td>Osteoblasts</td><td>ós-ti-o-blésts</td></tr>
+                            <tr><td>Osteoclastos</td><td>Osteoclasts</td><td>ós-ti-o-clésts</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ═══════════════ FOOTER ═══════════════ -->
+    <footer class="footer">
+        <p>🚀 <strong>Preparações: NASA</strong> — Guia do Space Young Leaders | Space Center Houston</p>
+        <p class="footer-small">Feito para o Luis ✨ Boa sorte na missão!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
